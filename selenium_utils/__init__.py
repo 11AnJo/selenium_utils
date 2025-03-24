@@ -1,4 +1,4 @@
-from .utils import SeleniumUtils
+from .utils import SeleniumUtils, WaitException, WaitAndClickException
 from .proxy import ProxyUtils
 
-__all__ = ['SeleniumUtils', 'ProxyUtils']
+__all__ = ['SeleniumUtils', 'ProxyUtils', 'WaitException', 'WaitAndClickException']

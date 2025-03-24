@@ -116,6 +116,7 @@ class SeleniumUtils:
             button = WebDriverWait(context, timeout).until(
                 EC.element_to_be_clickable((By.XPATH, xpath))
             )
+            button.location_once_scrolled_into_view
             button.click()
             return True
         except TimeoutException as e:
